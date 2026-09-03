@@ -32,7 +32,7 @@ def clean_sql(raw_response):
     text = raw_response.strip()
     if text.startswith("```"):
         text = text.strip("`")
-        text = text.replace("sql\n", "", 1)  # in case it's ```sql specifically
+        text = text.replace("sql\n", "", 1)
     return text.strip()
 
 
